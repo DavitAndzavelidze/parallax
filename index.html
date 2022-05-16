@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ead75f6eaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Parallax</title>
+  </head>
+  <body>
+    <div class="loader__wrapper">
+      <div class="loader"></div>
+    </div>
+    <div class="wrapper">
+      <div class="menu">
+        <div>
+          <img class="logo" src="imgs/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <li><a href="#">მთავარი</a></li>
+          <li><a href="#">სიახლები</a></li>
+          <li><a href="#">ტურები</a></li>
+          <li><a href="#">სურათები</a></li>
+          <li><a href="#">კონტაქტი</a></li>
+        </nav>
+        <div class="humburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <header>
+        <img src="imgs/mountain.jpg" class="background" alt="mountain" />
+        <img src="imgs/hiking.png" class="foreground" alt="hiking" />
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">შემოგვიერთდი</span>
+        </button>
+      </header>
+      <section class="txt_Container">
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/1.jpg" alt="hiking1" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/2.jpg" alt="hiking2" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/3.jpg" alt="hiking3" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/4.jpg" alt="hiking4" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/5.jpg" alt="hiking5" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/6.jpg" alt="hiking6" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/7.jpg" alt="hiking7" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/8.jpg" alt="hiking8" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+        <div class="box img__wrapper">
+          <img class="img" src="imgs/9.jpg" alt="hiking9" />
+          <div class="txt__wrapper">
+            <h3>Lorem, ipsum.</h3>
+            <h4>lorem</h4>
+          </div>
+        </div>
+      </section>
+      <div class="icon__container">
+        <div class="icon__box">
+          <i class="fa-solid fa-people-pulling"></i>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cum
+            aut neque quis animi amet beatae dolor earum repellendus nihil!
+          </p>
+        </div>
+        <div class="icon__box">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cum
+            aut neque quis animi amet beatae dolor earum repellendus nihil!
+          </p>
+        </div>
+        <div class="icon__box">
+          <i class="fa-solid fa-tent"></i>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cum
+            aut neque quis animi amet beatae dolor earum repellendus nihil!
+          </p>
+        </div>
+        <div class="icon__box">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cum
+            aut neque quis animi amet beatae dolor earum repellendus nihil!
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="footer__txt">
+          <p>info</p>
+          <p>support</p>
+          <p>marketing</p>
+        </div>
+        <div class="footer__copy">
+          <p>therms of use privacy policy</p>
+          <p>&copy; 2022 Lorem ipsum</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".loader__wrapper").fadeOut("slow");
+      });
+    </script>
+  </body>
+</html>
