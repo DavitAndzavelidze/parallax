@@ -370,6 +370,7 @@ button:hover .button-text {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  display: none;
 }
 /************* Service Content *************/
 .icon__container {
