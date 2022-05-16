@@ -5,59 +5,56 @@
   margin: 0;
   padding: 0;
 }
-/************* Loader Wrapper *************/
-.loader__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #333;
-}
-
-/* Loader Shape */
-.loader {
-  position: relative;
+/* Loader */
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
-  animation: animate 2s linear infinite;
 }
-/* Loader Animation */
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-    filter: hue-rotate(0deg);
-  }
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
+
+@keyframes spin {
+  0%,
   100% {
-    transform: rotate(360deg);
-    filter: hue-rotate(360deg);
+    transform: translate(0);
   }
-}
-/* Loader Pseudo Elements */
-.loader:before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  background: #333;
-  border-radius: 50%;
-  z-index: 999;
-}
-.loader:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
-  border-radius: 50%;
-  z-index: 999;
-  z-index: 1;
-  filter: blur(20px);
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
 }
 
 /************* Parallax Method *************/

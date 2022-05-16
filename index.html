@@ -13,9 +13,15 @@
     <title>Parallax</title>
   </head>
   <body>
-    <div class="loader__wrapper">
-      <div class="loader"></div>
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
     </div>
+    <!-- <div class="loader__wrapper">
+      <div class="loader"></div>
+    </div> -->
     <div class="wrapper">
       <div class="menu">
         <div>
@@ -158,7 +164,7 @@
     </div>
     <script>
       window.addEventListener("load", function () {
-        document.querySelector(".loader__wrapper").style.display = "none";
+        document.querySelector(".load").style.display = "none";
         document.querySelector(".wrapper").style.display = "block";
       });
     </script>
